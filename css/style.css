@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+#container {
+    display: flex;
+}
+#principal {
+    width: 100%;
+    overflow: hidden;
+}
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 10vh;
+}
+.logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+}
+.logo img {
+    width: 170px;
+}
+.social {
+    display: flex;
+    width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.social:hover {
+    color: red;
+}
+.soci {
+    flex-direction: column;
+    font-size: 60px;
+    line-height: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    height: 90vh;
+    background-color: whitesmoke;
+    width: 0px;
+    transition: all .3s;
+}
+nav ul {
+    width: 300px;
+    background-color: rgb(245, 245, 245);
+}
+nav ul li {
+    padding: 20px 20px;
+    border-bottom: 2px solid #79797938;
+}
+nav ul li:hover {
+    background: #004890;
+}
+nav ul li a {
+    color: #18100e;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+.slider {
+    overflow: hidden;
+    height: 90vh;
+    background-image: url(../img/doctor-01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.czo, .cztw {
+    transition: all .5s;
+}
+.cruze {
+    transform: rotate(50deg);
+    position: relative;
+    top: 5px;
+    left: 4px;
+}
+.cruzetwo {
+    transform: rotate(-50deg);
+    position: relative;
+    bottom: 5px;
+    right: 4px;
+}
+.non {
+    display: none;
+}
+.large {
+    width: 300px;
+    border-right: 3px solid #96969630;
+}
+.contain {
+    width: 100%;
+    height: 161px;
+    background: #000000b5;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    padding: 84px 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f1f1f1;
+}
+.contain h2{
+    font-size: 30px;
+}
+.contain p {
+    line-height: 20px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.address img {
+    width: 22px;
+}
+.pseudo::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 9px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.colunas-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.colunas-footer a .fa {
+    font-size: 43px;
+    color: #f1f1f1;
+    transition: all .3s;
+}
+.colunas-footer a .fa:hover {
+    color: #ec0928;
+}
+.txt {
+    height: 29vh;
+    display: flex;
+    justify-content: center;
+}
+.nav-slide {
+    display: flex;
+    padding: 8px 0px;
+}
+.sp-one, .sp-two, .sp-three {
+    font-size: 104px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+.sp-one:hover, .sp-two:hover, .sp-three:hover {
+    color: #004890;
+}
+.change {
+    display: none;
+}
+.ajust {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ajust .fa{
+    padding: 0 10px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 750px) {
+    .txt {
+        flex-direction: column;
+    }
+    .top {
+        flex-wrap: nowrap;
+    }
+    .contain {
+        padding: 84px 5px;
+    }
+    .sp-one, .sp-two, .sp-three {
+        height: 90px;
+        z-index: 7;
+    }
+    .contact {
+        height: 32vh; 
+    }
+    nav ul {
+        width: 100%;
+    }
+}
